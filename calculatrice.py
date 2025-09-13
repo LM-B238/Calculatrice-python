@@ -1,6 +1,6 @@
 # calculatrice.py
 # Une petite calculatrice basique en terminal
-# Auteur : TECH BOX
+# Auteur : Orphée_242
 # Licence : MIT
 
 def addition(a, b):
@@ -31,7 +31,7 @@ def main():
         choix = input("Choisissez une opération (1-5) : ")
 
         if choix == "5":
-            print("Merci d'avoir utilisé la calculatrice ! À bientôt 👋")
+            print("Merci d'avoir utilisé la calculatrice ! À bientôt")
             break
 
         if choix in ["1", "2", "3", "4"]:
@@ -39,7 +39,7 @@ def main():
                 a = float(input("Entrez le premier nombre : "))
                 b = float(input("Entrez le second nombre : "))
             except ValueError:
-                print("⚠️ Entrée invalide. Veuillez entrer un nombre.")
+                print("Entrée invalide. Veuillez entrer un nombre.")
                 continue
 
             if choix == "1":
@@ -51,7 +51,8 @@ def main():
             elif choix == "4":
                 print(f"Résultat : {division(a, b)}")
         else:
-            print("⚠️ Choix invalide, réessayez.")
+            print("Choix invalide, réessayez.")
 
 if __name__ == "__main__":
     main()
+
